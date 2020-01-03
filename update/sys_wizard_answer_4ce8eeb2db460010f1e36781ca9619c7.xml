@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Dynamic Email Report</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Dynamic Email Report</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Application File" name="Application File">f0bbfb31db110010f1e36781ca961907</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-01-03 22:25:09</sys_created_on>
+        <sys_id>4ce8eeb2db460010f1e36781ca9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dynamic Email Report</sys_name>
+        <sys_package display_value="2020-01-03-Report" source="x_8821_2020_01_03">2b482ab2dbc20010f1e36781ca961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="2020-01-03-Report">2b482ab2dbc20010f1e36781ca961924</sys_scope>
+        <sys_update_name>sys_wizard_answer_4ce8eeb2db460010f1e36781ca9619c7</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-01-03 22:25:09</sys_updated_on>
+        <table/>
+        <target_url>x_8821_2020_01_03_dynamic_email_report.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

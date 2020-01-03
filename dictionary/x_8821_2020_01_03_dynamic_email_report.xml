@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sysauto_report" label="Dynamic Email Report" max_length="40" name="x_8821_2020_01_03_dynamic_email_report" type="collection"/>
+</database>

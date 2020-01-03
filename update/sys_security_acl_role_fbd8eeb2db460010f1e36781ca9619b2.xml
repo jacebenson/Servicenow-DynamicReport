@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-01-03 22:25:09</sys_created_on>
+        <sys_id>fbd8eeb2db460010f1e36781ca9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_8821_2020_01_03_dynamic_email_report.x_8821_2020_01_03.dynamic_email_report_user</sys_name>
+        <sys_package display_value="2020-01-03-Report" source="x_8821_2020_01_03">2b482ab2dbc20010f1e36781ca961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="2020-01-03-Report">2b482ab2dbc20010f1e36781ca961924</sys_scope>
+        <sys_security_acl display_value="x_8821_2020_01_03_dynamic_email_report">3bd8eeb2db460010f1e36781ca9619ae</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fbd8eeb2db460010f1e36781ca9619b2</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-01-03 22:25:09</sys_updated_on>
+        <sys_user_role display_value="x_8821_2020_01_03.dynamic_email_report_user" name="x_8821_2020_01_03.dynamic_email_report_user">bfd82eb2db460010f1e36781ca961943</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

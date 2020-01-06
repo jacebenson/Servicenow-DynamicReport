@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_8821_2020_01_03_dynamic_email_report">dynamic_action!=^EQ<item display_value="-- None --" endquery="false" field="dynamic_action" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	var cs = [];
+	cs.push('function onlyUnique(value, index, self) { ');
+	cs.push('	return self.indexOf(value) === index;');
+	cs.push('}');
+	cs.push('var readyToSend = true;');
+	cs.push('var dynamicAction = current.getValue("dynamic_action");');
+	cs.push('var reportDef = current.report.getRefRecord();');
+	cs.push('var report = new GlideRecord(reportDef.table);');
+	cs.push('report.addEncodedQuery(reportDef.filter);');
+	cs.push('report.query();');
+	cs.push('var assignedArray = [];');
+	cs.push('// Loop thru get array of assigned to sys_id');
+	cs.push('while(report.next()){');
+	cs.push('  assignedArray.push(report.getValue("assigned_to"));');
+	cs.push('}');
+	cs.push('// Make array unique');
+	cs.push('var assignedUnique = assignedArray.filter(onlyUnique);');
+	cs.push('if(assignedUnique.length > 0){');
+	cs.push('  // Update scheduled reports user list');
+	cs.push('  switch (dynamicAction){');
+	cs.push('    case "Append to Static":');
+	cs.push('      current.user_list += "," + assignedUnique.join(",");');
+	cs.push('      break;');
+	cs.push('    case "Replace Static":');
+	cs.push('      current.user_list = assignedUnique.join(",");');
+	cs.push('      break;');
+	cs.push('    case "Intersection of Static":');
+	cs.push('      // future feature');
+	cs.push('      break;');
+	cs.push('    default: ');
+	cs.push('      gs.error("This should not be here");');
+	cs.push('  }');
+	cs.push('} else {');
+	cs.push('  readyToSend = false;');
+	cs.push('}');
+	cs.push('answer = readyToSend;');
+	var csStr = cs.join('\n');
+	g_form.setValue('conditional', true);
+	g_form.setValue('condition', csStr);
+}]]></script_true>
+        <set_values/>
+        <short_description>Set Condition if Dynamic</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-01-06 03:15:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>47b9f16bdb02c010f1e36781ca9619c8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Set Condition if Dynamic</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="2020-01-03-Report" source="x_8821_2020_01_03">2b482ab2dbc20010f1e36781ca961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="2020-01-03-Report">2b482ab2dbc20010f1e36781ca961924</sys_scope>
+        <sys_update_name>sys_ui_policy_47b9f16bdb02c010f1e36781ca9619c8</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-01-06 03:42:00</sys_updated_on>
+        <table>x_8821_2020_01_03_dynamic_email_report</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

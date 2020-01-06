@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="dynamic_action" table="x_8821_2020_01_03_dynamic_email_report" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>dynamic_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Append to Static</label>
+            <language>en</language>
+            <name>x_8821_2020_01_03_dynamic_email_report</name>
+            <sequence/>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-01-06 02:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68773167db02c010f1e36781ca9619eb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-01-06 02:45:11</sys_updated_on>
+            <value>Append to Static</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>dynamic_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intersection of Static</label>
+            <language>en</language>
+            <name>x_8821_2020_01_03_dynamic_email_report</name>
+            <sequence/>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-01-06 02:48:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8848fd27db02c010f1e36781ca961923</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-01-06 02:48:36</sys_updated_on>
+            <value>Intersection of Static</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>dynamic_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Replace Static</label>
+            <language>en</language>
+            <name>x_8821_2020_01_03_dynamic_email_report</name>
+            <sequence/>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-01-06 02:48:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad87fd67db02c010f1e36781ca9619bd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-01-06 02:48:15</sys_updated_on>
+            <value>Replace Static</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>dynamic_action</element>
+            <name>x_8821_2020_01_03_dynamic_email_report</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-01-06 02:44:58</sys_created_on>
+            <sys_id>a58735a7db02c010f1e36781ca96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>dynamic_action</sys_name>
+            <sys_package display_value="2020-01-03-Report" source="x_8821_2020_01_03">2b482ab2dbc20010f1e36781ca961924</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="2020-01-03-Report">2b482ab2dbc20010f1e36781ca961924</sys_scope>
+            <sys_update_name>sys_choice_x_8821_2020_01_03_dynamic_email_report_dynamic_action</sys_update_name>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-01-06 02:44:58</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

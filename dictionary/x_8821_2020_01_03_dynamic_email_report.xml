@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sysauto_report" label="Dynamic Email Report" max_length="40" name="x_8821_2020_01_03_dynamic_email_report" type="collection"/>
+    <element extends="sysauto_report" label="Dynamic Email Report" max_length="40" name="x_8821_2020_01_03_dynamic_email_report" type="collection">
+        <element choice="1" label="Dynamic Action" max_length="40" name="dynamic_action" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Append to Static" value="Append to Static"/>
+                <element inactive_on_update="false" label="Intersection of Static" value="Intersection of Static"/>
+                <element inactive_on_update="false" label="Replace Static" value="Replace Static"/>
+            </choice>
+        </element>
+    </element>
 </database>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="dynamic_action" label="Dynamic Action" language="en" table="x_8821_2020_01_03_dynamic_email_report">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>dynamic_action</element>
+            <help/>
+            <hint/>
+            <label>Dynamic Action</label>
+            <language>en</language>
+            <name>x_8821_2020_01_03_dynamic_email_report</name>
+            <plural>Dynamic Actions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-01-06 02:44:16</sys_created_on>
+            <sys_id>4f57b1a7db02c010f1e36781ca9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Dynamic Action</sys_name>
+            <sys_package display_value="2020-01-03-Report" source="x_8821_2020_01_03">2b482ab2dbc20010f1e36781ca961924</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="2020-01-03-Report">2b482ab2dbc20010f1e36781ca961924</sys_scope>
+            <sys_update_name>sys_documentation_x_8821_2020_01_03_dynamic_email_report_dynamic_action_en</sys_update_name>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-01-06 02:44:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
